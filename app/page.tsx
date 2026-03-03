@@ -1,3 +1,9 @@
+import GlobalProvider from './providers/GlobalProvider';
+
 export default function Home() {
-  return <h1>Hello World!</h1>;
+  return (
+    <GlobalProvider>
+      <h1>Hello World!</h1>
+    </GlobalProvider>
+  );
 }
